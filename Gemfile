@@ -28,6 +28,7 @@ end
 group :test do
   gem 'rspec-rails', '2.10.0'
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '1.4.0'
 
   # System-dependent gems
   gem 'rb-fsevent', '0.9', :require => false
