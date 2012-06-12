@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.5'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'jquery-rails', '2.0.0'
+
 
 group :development do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.10.0'
   gem 'guard-rspec', '0.5.5'
+
+  #used to annotate database structure in source code files, rerun after each db:migrate
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 # Gems used only for assets and not required
@@ -16,7 +22,7 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '2.0.0'
+
 
 group :test do
   gem 'rspec-rails', '2.10.0'
